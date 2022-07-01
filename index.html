@@ -1,0 +1,151 @@
+<html>
+        <head>
+                <title>
+                     LogRegForm
+                </title>
+                <style>
+                    *{
+    padding: 0;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.main{
+    width: 50%;
+    margin: 50px auto;
+    background-color: darkgrey;
+    box-sizing: border-box;
+
+}
+h1{
+    padding: 8px;
+}
+.s{
+    color: blueviolet;
+}
+.a{
+    color: red;
+}
+.m{
+    color: orange;
+}
+.row{
+    background-color: khaki;
+    text-align: center;
+}
+.web{
+    color: violet;
+}
+.row2{
+    display: flex;
+}
+.row2-1{
+    width: 50%;
+    padding: 25px;
+    background-color:lightblue;
+
+    
+   
+}
+.row2-2{
+    width: 50%;
+    padding: 25px;
+    background-color:lightgreen;
+   
+ 
+}
+h2{
+    text-align: center;
+    color:aliceblue;
+    padding: 5px;
+}
+label{
+    margin: 10px;
+    font-size: 20px;
+}
+input{
+    margin: 5px;
+    width: 80%;
+    padding: 8px;
+    border: none;
+}
+
+button{
+    border: 1px solid black;
+    width: 40%;
+    height: 10%;
+    margin: 10px;
+    font-size: 14px;
+    color:white;
+    background-color: thistle;
+}
+.row2-1:hover{
+    transform: scale(1.1,1.1);
+    transition: all 0,5s;
+    
+}
+.row2-2:hover{
+    transform: scale(1.1,1.1);
+    transition: all 0,5s;
+    
+}
+.row:hover{
+    transform: scale(1.1,1.1);
+    transition: all 0,5s;
+    font-size: 10px;
+    background-color: white;
+    border: 2px solid black;
+}
+a{
+    color: saddlebrown;
+    text-decoration: none;
+    font-size: 10px;
+    padding: 3px;
+}
+a:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid seagreen;
+    border-radius: 3px;
+}
+                </style>
+               
+        </head>
+<body>
+    
+    <div class="main">
+
+        <div class="row">
+
+            <h1>
+                <span class="s">S</span><span class="a">a</span><span class="m">m</span>
+                <span class="web">Web Works</span>
+            </h1>
+
+        </div>
+        <div class="row2">
+
+            <div class="row2-1">
+                <h2>User Registration</h2>
+                <form method="post" action="LogRegPhp.php">
+                    <label for="username">Username</label> <br>
+                    <input type="text" name="username" required> <br>
+                    <label for="password">Password</label> <br>
+                    <input type="password" name="password" required> <br>
+                    <button name="register">Register</button>
+                </form>
+            </div>
+            <div class="row2-2">
+                <h2>User Login</h2>
+                <form method="post" action="LogRegPhp.php">
+                    <label for="username">Username</label> <br>
+                    <input type="text" name="l-username" required> <br>
+                    <label for="password">Password</label> <br>
+                    <input type="password" name="l-password" required> <br>
+                    <button name="Login">Login</button>
+                    <a href="#">Forgot Password? Click here</a>
+                </form>
+            </div>
+        </div>
+</div>
+</body>
+</html>
